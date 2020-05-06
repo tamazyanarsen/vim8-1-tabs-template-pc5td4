@@ -7,9 +7,9 @@
 
 <br>
 
-<tabs>
+<tabs class="tabs__titles">
   <tab *ngFor="let tab of tabs">
-    <tab-title>
+    <tab-title class="tabs__title" [ngClass]="{'tabs__title--active': activeTabNumber === tab}">
       Tab <b>{{ tab }}</b> title
     </tab-title>
     <tab-content>
