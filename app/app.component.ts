@@ -16,6 +16,10 @@ export class AppComponent {
     this.tabs = this.tabs.slice(0, -1);
   }
 
+  setActiveTabNumber(event) {
+    this.activeTabNumber = event;
+  }
+
   public inc() {
     this.tabs = [...this.tabs, this.tabs.length + 1];
   }
